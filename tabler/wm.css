@@ -1,9 +1,6 @@
 :root { --tblr-font-sans-serif: 'Inter var', -apple-system, BlinkMacSystemFont, sans-serif; }
       body { font-feature-settings: "cv03", "cv04", "cv11"; }
 
-body {
-    border: 5px solid red !important;
-}
       /* --- THE FIX FOR OVERLAPPING DROPDOWNS --- */
       @media (min-width: 992px) {
         .nav-item.dropdown:hover > .dropdown-menu {
