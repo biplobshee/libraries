@@ -3,10 +3,12 @@
 
       /* --- THE FIX FOR OVERLAPPING DROPDOWNS --- */
       @media (min-width: 992px) {
-        /* 1. Ensure the parent nav-item is the reference point */
-        .nav-item.dropdown {
-          position: relative;
+        .nav-item.dropdown:hover > .dropdown-menu {
+          display: block !important;
+          margin-top: 0;
+          top: 100%;
         }
+      }
 
         /* 2. Show on hover and position at the very bottom of the navbar */
         .nav-item.dropdown:hover > .dropdown-menu {
